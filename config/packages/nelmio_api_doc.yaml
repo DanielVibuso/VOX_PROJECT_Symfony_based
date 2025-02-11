@@ -1,0 +1,14 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Symfony VOX API
+            description: Documentação da api de cadastro de empresas e quadro societário!
+            version: 1.0.0
+        servers:
+            - url: "http://localhost"
+    areas:
+        path_patterns: # an array of regexps (document only routes under /api, except /api/doc)
+            - ^/api(?!/doc$)
+        host_patterns: # document only routes with a host of the form api.*
+            - ^api\.
+

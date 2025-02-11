@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_login_check:
+    path: /api/user/login_check
+
+api_doc:
+    path: /api/doc
+    controller: App\Controller\ApiDocController::__invoke
+    methods: GET
